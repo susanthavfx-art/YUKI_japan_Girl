@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="si">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf8fe">
+  <meta name="description" content="Yuki සමඟ සිංහලෙන් ජපන් ඉගෙන ගන්න — සංවාද, වචන, ව්‍යාකරණ සහ සවන්දීම.">
+  <title>Yuki — ඔබේ ජපන් කතාබහ මිතුරිය</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V10Z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11.5a8.5 8.5 0 0 1-8.5 8.5 9 9 0 0 1-3.7-.8L3 21l1.8-4.8A8.5 8.5 0 1 1 20 11.5Z"/><path d="M8 11.5h8M8 15h5"/></symbol>
+    <symbol id="i-cards" viewBox="0 0 24 24"><rect x="3" y="5" width="15" height="16" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v13M7 10h7M7 14h5"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6c-2.5-1.7-5.2-2-9-1.5V19c3.8-.5 6.5-.2 9 1.5 2.5-1.7 5.2-2 9-1.5V4.5c-3.8-.5-6.5-.2-9 1.5Z"/><path d="M12 6v14.5"/></symbol>
+    <symbol id="i-headphones" viewBox="0 0 24 24"><path d="M3 14v-3a9 9 0 0 1 18 0v3M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm18 0h-3a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-5Z"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 2 1.7 5.3L19 9l-5.3 1.7L12 16l-1.7-5.3L5 9l5.3-1.7L12 2ZM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16ZM4 16l.5 1.5L6 18l-1.5.5L4 20l-.5-1.5L2 18l1.5-.5L4 16Z"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M10 2h4l.6 2.3c.5.2 1 .4 1.4.6L18.1 4 21 6.9l-1 2.1c.2.5.4.9.6 1.4L23 11v4l-2.4.6c-.2.5-.4.9-.6 1.4l1 2.1-2.9 2.9-2.1-1c-.4.2-.9.4-1.4.6L14 24h-4l-.6-2.4c-.5-.2-1-.4-1.4-.6l-2.1 1L3 19.1l1-2.1c-.2-.5-.4-.9-.6-1.4L1 15v-4l2.4-.6c.2-.5.4-.9.6-1.4L3 6.9 5.9 4 8 5c.4-.2.9-.4 1.4-.6L10 2Z" transform="translate(0 -1) scale(1 .94)"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m5 9 7 7 7-7"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M20 12H4m7-7-7 7 7 7"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 22a8 8 0 0 0 8-8c0-4-2.4-6.3-4-8-.2 2-1.2 3.3-2 4-1.2-4-4-6.2-6-8 .3 3-1 5-2.5 7C4.4 10.5 4 12 4 14a8 8 0 0 0 8 8Z"/><path d="M12 22a3.5 3.5 0 0 0 3.5-3.5c0-1.5-1-2.6-2.2-3.5-.1 1.2-.7 1.9-1.3 2.3-.4-1.3-1.3-2.2-2.2-2.8.1 1.2-.4 1.8-1 2.7A3.5 3.5 0 0 0 12 22Z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3 6.2 6.8 1-4.9 4.8 1.2 6.8-6.1-3.2-6.1 3.2 1.2-6.8-4.9-4.8 6.8-1L12 2Z"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4ZM17 9a4 4 0 0 1 0 6M19.5 6a8 8 0 0 1 0 12"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4m-4 0h8"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4L22 2ZM11 13 22 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 16A9 9 0 0 1 8 3.5 9 9 0 1 0 20.5 16Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M3 7h3c5 0 7 10 12 10h3m-4-4 4 4-4 4M3 17h3c2 0 3.5-1.5 4.7-3M14 9c1.1-1.2 2.3-2 4-2h3m-4-4 4 4-4 4"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 7a9 9 0 0 0-15.4-2L2 8m0-5v5h5M4 17a9 9 0 0 0 15.4 2L22 16m0 5v-5h-5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 11v6m0-10h.01"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8 14-2 8 6-3 6 3-2-8"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4l11-11-4-4L4 16v4ZM13 7l4 4m1-8 3 3"/></symbol>
+  </svg>
+
+  <div id="welcome-screen" class="welcome-screen">
+    <div class="welcome-wrap">
+      <header class="welcome-header">
+        <div class="brand brand-large"><span class="brand-mark">ゆ</span><span class="brand-copy"><strong>yuki<span class="brand-dot">.</span></strong><small>日本語をいっしょに</small></span></div>
+        <button class="welcome-skip text-button" type="button" data-action="enter-app">දැනටමත් දන්නවාද? <span>ඇතුළු වන්න →</span></button>
+      </header>
+      <main class="welcome-main">
+        <div class="welcome-copy">
+          <span class="eyebrow"><span class="eyebrow-star">✦</span> ශ්‍රී ලාංකික ඔබ වෙනුවෙන්ම</span>
+          <h1>ජපන් ඉගෙනීම<br><em>ලස්සන ගමනක්</em><br>කරගමු. <span class="heading-flower">✿</span></h1>
+          <p>සිංහලෙන් සරලව ඉගෙන ගන්න. Yuki එක්ක කතා කරමින්, වචන මතක තබාගනිමින්, ටිකෙන් ටික ඉදිරියට යමු.</p>
+          <div class="welcome-form"><label for="welcome-name">ඔබට කතා කරන්න ඕන නම <span>(විකල්ප)</span></label><div class="welcome-input-row"><input id="welcome-name" type="text" maxlength="30" autocomplete="given-name" placeholder="ඔබේ නම මෙතැන ලියන්න"><button class="button button-primary" type="button" data-action="start-learning">ගමන අරඹමු <svg class="icon"><use href="#i-arrow-right"></use></svg></button></div></div>
+          <div class="welcome-perks"><span><svg class="icon"><use href="#i-check"></use></svg> සිංහලෙන් පැහැදිලි කිරීම්</span><span><svg class="icon"><use href="#i-check"></use></svg> Beginner මට්ටමේ පාඩම්</span></div>
+        </div>
+        <div class="welcome-art" aria-label="Yuki, ඔබේ ජපන් ඉගෙනුම් මිතුරිය">
+          <div class="welcome-art-orb"></div><span class="art-spark art-spark-one">✦</span><span class="art-spark art-spark-two">✳</span><span class="art-spark art-spark-three">✿</span>
+          <img src="assets/yuki.png" alt="අත වනන Yuki නම් ජපන් ගුරු මිතුරිය" class="welcome-yuki">
+          <div class="welcome-speech"><span class="speech-wave">〰</span><strong>いっしょに はなそう！</strong><small>අපි එකට කතා කරමු!</small></div>
+          <div class="welcome-level"><span>🌸</span><span>ඔබේ මට්ටම<strong>Beginner · N5</strong></span></div>
+        </div>
+      </main>
+      <footer class="welcome-footer"><span>✧ කතාබහ</span><span>✧ වචන</span><span>✧ සවන්දීම</span><span class="welcome-footer-note">Demo mode එකෙන් නොමිලේ ආරම්භ කරන්න</span></footer>
+    </div>
+  </div>
+
+  <div id="app-shell" class="app-shell" hidden>
+    <div id="sidebar-scrim" class="sidebar-scrim" data-action="close-menu"></div>
+    <aside id="sidebar" class="sidebar" aria-label="ප්‍රධාන සංචාලනය">
+      <div class="sidebar-top">
+        <div class="brand"><span class="brand-mark">ゆ</span><span class="brand-copy"><strong>yuki<span class="brand-dot">.</span></strong><small>日本語をいっしょに</small></span></div>
+        <button class="icon-button sidebar-close" type="button" aria-label="මෙනුව වසන්න" data-action="close-menu"><svg class="icon"><use href="#i-close"></use></svg></button>
+      </div>
+      <div class="sidebar-content">
+        <div class="nav-label">ඉගෙනීම</div>
+        <nav class="side-nav" aria-label="ප්‍රධාන පිටු">
+          <button class="nav-link" type="button" data-page="dashboard"><svg class="icon"><use href="#i-home"></use></svg><span>මුල් පිටුව</span></button>
+          <button class="nav-link" type="button" data-page="chat"><svg class="icon"><use href="#i-chat"></use></svg><span>Yuki සමඟ කතාබහ</span><span class="nav-new">NEW</span></button>
+          <button class="nav-link" type="button" data-page="vocabulary"><svg class="icon"><use href="#i-cards"></use></svg><span>වචන කාඩ්පත්</span></button>
+          <button class="nav-link" type="button" data-page="grammar"><svg class="icon"><use href="#i-book"></use></svg><span>ව්‍යාකරණ</span></button>
+          <button class="nav-link" type="button" data-page="listening"><svg class="icon"><use href="#i-headphones"></use></svg><span>සවන්දීම</span></button>
+        </nav>
+        <div class="nav-label nav-label-second">ඔබ වෙනුවෙන්</div>
+        <nav class="side-nav" aria-label="තවත් පිටු">
+          <button class="nav-link" type="button" data-page="challenges"><svg class="icon"><use href="#i-sparkles"></use></svg><span>දෛනික අභියෝග</span></button>
+          <button class="nav-link" type="button" data-page="settings"><svg class="icon"><use href="#i-settings"></use></svg><span>සැකසුම්</span></button>
+        </nav>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="sidebar-goal"><span class="goal-icon">✦</span><span class="goal-title">අද ඉලක්කය</span><strong id="sidebar-goal-text">0 / 3 සම්පූර්ණයි</strong><div class="mini-progress"><span id="sidebar-goal-fill"></span></div><button type="button" data-page="challenges">අභියෝග බලන්න <svg class="icon"><use href="#i-arrow-right"></use></svg></button></div>
+        <button class="sidebar-theme" type="button" data-action="toggle-theme"><svg class="icon theme-icon"><use href="#i-moon"></use></svg><span class="theme-label">අඳුරු තේමාව</span><span class="theme-switch"><span></span></span></button>
+        <span class="sidebar-signoff">Made with ♡ for your Japanese journey</span>
+      </div>
+    </aside>
+
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="topbar-left"><button class="icon-button mobile-menu-button" type="button" data-action="open-menu" aria-label="මෙනුව විවෘත කරන්න"><svg class="icon"><use href="#i-menu"></use></svg></button><div class="breadcrumb"><span>Yuki</span><svg class="icon"><use href="#i-chevron-right"></use></svg><strong id="breadcrumb-current">මුල් පිටුව</strong></div></div>
+        <div class="topbar-right"><button class="level-pill" type="button" data-action="open-level"><span class="level-dot"></span><span>Beginner · N5</span><svg class="icon"><use href="#i-chevron-down"></use></svg></button><button class="mode-pill" type="button" data-action="mode-info" aria-label="ඉගෙනුම් මාදිලිය පිළිබඳ විස්තර"><span class="mode-dot"></span><span data-mode-label>Demo mode</span></button><button class="profile-button" type="button" data-page="settings" aria-label="සැකසුම් වෙත යන්න"><span>🌸</span></button></div>
+      </header>
+      <main id="page-root" class="page-root" tabindex="-1"></main>
+    </div>
+    <nav class="mobile-bottom-nav" aria-label="ජංගම සංචාලනය"><button type="button" data-page="dashboard"><svg class="icon"><use href="#i-home"></use></svg><span>මුල් පිටුව</span></button><button type="button" data-page="chat"><svg class="icon"><use href="#i-chat"></use></svg><span>කතාබහ</span></button><button type="button" data-page="vocabulary"><svg class="icon"><use href="#i-cards"></use></svg><span>වචන</span></button><button type="button" data-page="listening"><svg class="icon"><use href="#i-headphones"></use></svg><span>සවන් දෙන්න</span></button><button type="button" data-action="open-menu"><svg class="icon"><use href="#i-menu"></use></svg><span>තවත්</span></button></nav>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root" role="status" aria-live="polite"></div>
+</body>
+</html>

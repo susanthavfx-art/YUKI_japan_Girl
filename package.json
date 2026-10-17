@@ -1,0 +1,12 @@
+{
+  "name": "yuki-japanese-tutor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sinhala-first Japanese learning app with optional secure AI backend",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
